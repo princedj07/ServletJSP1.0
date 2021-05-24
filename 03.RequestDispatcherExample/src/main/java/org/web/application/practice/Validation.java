@@ -15,7 +15,7 @@ public class Validation extends HttpServlet {
 	
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	
-		System.out.println("Login Servlet Called....");
+		System.out.println("Login Servlet Called......");
 		response.setContentType("text/html");
 		
 		PrintWriter pwriter = response.getWriter();
