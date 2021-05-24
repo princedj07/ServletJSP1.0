@@ -15,16 +15,15 @@ public class Hello extends HttpServlet{
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		System.out.println("Hello Servlet called....");
+		System.out.println("Hello Servlet called.....");
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 		response.setContentType("text/html");
 
 		PrintWriter out = response.getWriter();
 
 		String name = request.getParameter("user");
-		out.print("<br>Hello " + name);
+		out.print("<br><b>Hello <b>" + name);
 		out.close();
-		
 
 	}
 	
