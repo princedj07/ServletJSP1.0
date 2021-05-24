@@ -1,0 +1,68 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+
+
+	<servlet>
+		<servlet-name>GetServlet1</servlet-name>
+		<servlet-class>org.web.app.practice.GetServletContextParameter</servlet-class>
+	</servlet>
+
+	<context-param>
+		<param-name>dname</param-name>
+		<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+	</context-param>
+
+	<servlet-mapping>
+		<servlet-name>GetServlet1</servlet-name>
+		<url-pattern>/context</url-pattern>
+	</servlet-mapping>
+
+<!--**********************************************************************************************-->
+
+	<servlet>
+		<servlet-name>GetServlet2</servlet-name>
+		<servlet-class>org.web.app.practice.GetAllContextParameter</servlet-class>
+	</servlet>
+	
+	<context-param>
+		<param-name>username</param-name>
+		<param-value>system</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>password</param-name>
+		<param-value>oracle</param-value>
+	</context-param>
+
+	<servlet-mapping>
+		<servlet-name>GetServlet2</servlet-name>
+		<url-pattern>/allcontext</url-pattern>
+	</servlet-mapping>
+
+<!--**********************************************************************************************-->
+
+	<servlet>
+		<servlet-name>S1</servlet-name>
+		<servlet-class>org.web.app.practice.SetAttribute</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>S1</servlet-name>
+		<url-pattern>/servlet1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>S2</servlet-name>
+		<servlet-class>org.web.app.practice.GetAttribute</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>S2</servlet-name>
+		<url-pattern>/servlet2</url-pattern>
+	</servlet-mapping>  
+
+
+</web-app>

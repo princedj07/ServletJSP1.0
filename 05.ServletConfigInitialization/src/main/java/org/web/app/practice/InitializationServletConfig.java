@@ -22,6 +22,10 @@ public class InitializationServletConfig extends HttpServlet {
 		String driver = config.getInitParameter("driver");
 		out.print("<b>Driver is : <b>" + driver);
 
+		String servletName = getServletName();
+		out.print("<br><br><b>ServletName is    : <b>" + servletName);
+		out.print("<br><br><b>ServletContext is : <b>" + getServletContext());
+				
 		out.close();
 	}
 

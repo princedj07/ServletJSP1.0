@@ -1,0 +1,7 @@
+Base URL 1 :	http://localhost:8080/06.ServletContextGetInitializationParam/context
+
+Base URL 2 :	http://localhost:8080/06.ServletContextGetInitializationParam/allcontext
+
+Base URL 3 :	http://localhost:8080/06.ServletContextGetInitializationParam/servlet1
+
+Base URL 4 :	http://localhost:8080/06.ServletContextGetInitializationParam/servlet2

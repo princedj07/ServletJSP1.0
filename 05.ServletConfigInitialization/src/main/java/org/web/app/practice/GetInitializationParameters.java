@@ -25,8 +25,9 @@ public class GetInitializationParameters extends HttpServlet {
 		String str = "";
 		while (e.hasMoreElements()) {
 			str = e.nextElement();
-			out.print("<b><br>Name<b>: " + str);
-			out.print("<b> value<b>: " + config.getInitParameter(str));
+			out.print("<br>Name : " + str);
+			out.print("Value : " + config.getInitParameter(str));
+			out.print("<br>");
 		}
 
 		out.close();
