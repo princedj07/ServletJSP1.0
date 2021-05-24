@@ -15,7 +15,7 @@ public class Hello extends HttpServlet{
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		System.out.println("Get method called....");
+		System.out.println("Hello Servlet called....");
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 		response.setContentType("text/html");
 
